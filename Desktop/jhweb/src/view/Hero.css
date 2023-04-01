@@ -1,0 +1,118 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero_one {
+  height: 650px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.description_box {
+  text-align: center;
+  position: relative;
+  top: 70px;
+  width: 50%;
+}
+
+.Joey_Helps {
+  font-family: "Lexend Deca";
+  font-size: 75px;
+  color: #7896ca;
+}
+
+.picture1 {
+  width: 50%;
+}
+
+.hero_one button {
+  height: 20px;
+  background-color: #7896ca;
+  color: white;
+  border: white;
+  width: 200px;
+  height: 60px;
+  transition: 0.2s ease;
+}
+
+.hero_one button:hover {
+  color: #7896ca;
+  background-color: white;
+  border-style: solid;
+  border-color: #7896ca;
+}
+
+.description {
+  font-family: "Lexend Deca";
+  font-size: 17px;
+}
+
+.moto {
+  font-family: "Lexend Deca";
+  font-size: 20px;
+}
+
+.hero_two {
+  height: 1200px;
+}
+
+.team {
+  color: #7896ca;
+  font-size: 80px;
+  font-family: "Lexend Deca";
+  text-align: center;
+  top: 60px;
+}
+
+.VP_1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.VP_1 .name {
+  background-color: aqua;
+  height: 80px;
+  width: 250px;
+  text-align: center;
+  background-color: #7896ca;
+  color: white;
+  font-size: 18px;
+  font-family: "Lexend Deca";
+  padding: 15px;
+}
+
+.VP_2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.VP_2 .name {
+  height: 75px;
+  width: 250px;
+  text-align: center;
+  background-color: #7896ca;
+  color: white;
+  font-size: 17px;
+  font-family: "Lexend Deca";
+  padding: 15px;
+}
+
+.hero_three {
+  display: flex;
+  background-color: white;
+  height: 650px;
+}
+
+.fill_in div { 
+  width: 100px;
+  height: 40px;
+  margin: 50px;
+  background-color: #7896ca;
+}
+
+
+

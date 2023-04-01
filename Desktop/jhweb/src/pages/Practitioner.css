@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.practitioner_first_box {
+  display: flex;
+  max-width: 100%;
+  padding: 40px;
+}
+
+.first_box_image {
+  max-width: 50%;
+}
+
+.description_title {
+  padding-top: 60px;
+  font-size: 80px;
+  color: #7896ca;
+}
+
+.description_pricing_plan_button {
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  width: 350px;
+  height: 70px;
+  background-color: #7896ca;
+  border-radius: 10px;
+  border-style: none;
+}
+
+.practitioner_second_box {
+  text-align: center;
+  align-items: center;
+  background-color: #fff6fd;
+  margin: auto;
+  padding: 50px;
+  height: 1100px;
+  width: 1200px;
+  border-radius: 20px;
+}
+
+.second_box_title {
+  font-size: 95px;
+  font-weight: bold;
+  color: #7896ca;
+}
+
+.second_box_description {
+  font-size: 25px;
+}
+
+.boxes_top {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 80px;
+  padding-top: 60px;
+}
+
+.Focus {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  width: 550px;
+  background-color: white;
+  border: 5px solid #7896ca;
+  border-radius: 20px;
+}
+
+.Focus_box {
+    padding: 30px;
+}
+
+.Focus_title {
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.Focus_description{
+    text-align: left;
+    font-size: 23px;
+}
+
+.Focus_img {
+  padding-left: 40px;
+}
+
+.Content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    width: 550px;
+    background-color: white;
+    border: 5px solid #7896ca;
+    border-radius: 20px;
+  }
+  
+  .Content_box {
+      padding: 30px;
+  }
+  
+  .Content_title {
+      text-align: left;
+      font-size: 30px;
+      font-weight: bold;
+  }
+  
+  .Content_description{
+      text-align: left;
+      font-size: 23px;
+  }
+  
+  .Content_img {
+    padding-left: 40px;
+  }
+
+.boxes_bottom {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 80px;
+  padding-top: 60px;
+}
+
+.Connection {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    width: 550px;
+    background-color: white;
+    border: 5px solid #7896ca;
+    border-radius: 20px;
+  }
+  
+  .Connection_box {
+      padding: 30px;
+  }
+  
+  .Connection_title {
+      text-align: left;
+      font-size: 30px;
+      font-weight: bold;
+  }
+  
+  .Connection_description{
+      text-align: left;
+      font-size: 23px;
+  }
+  
+  .Connection_img {
+    padding-left: 40px;
+  }
+
+  .Interview {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    width: 550px;
+    background-color: white;
+    border: 5px solid #7896ca;
+    border-radius: 20px;
+  }
+  
+  .Interview_box {
+      padding: 30px;
+  }
+  
+  .Interview_title {
+      text-align: left;
+      font-size: 40px;
+      font-weight: bold;
+  }
+  
+  .Interview_description{
+      text-align: left;
+      font-size: 23px;
+  }
+  
+  .Interview_img {
+    padding-left: 40px;
+  }
+
+
+.practitioner_third_box {
+  text-align: center;
+  align-items: center;
+  background-color: #EAF1FE;
+  margin: auto;
+  height: 400px;
+  width: 1200px;
+  border-radius: 20px;
+}
+
+.New_Practices {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    padding-top: 40px; ;
+  }
+
+.New_Practices_box {
+    align-items: center;
+    padding-right: 30px; ;
+}
+
+.New_Practices_description{
+    text-align: left;
+    align-items: center;
+    font-size: 30px;
+}
+
+.New_Practices_title {
+    text-align: left;
+    align-items: center;
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+ul.a {
+    list-style-type: square;
+}
