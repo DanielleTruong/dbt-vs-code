@@ -1,0 +1,37 @@
+==================== 2025-11-27 17:41:07.087392 | d825f482-3de8-4b44-85e6-b09e83bce372 ====================
+17:41:07.087665 [info ]: Starting dbt LSP server
+17:41:07.087712 [info ]: Connecting to LSP client on port 8000
+17:41:07.087975 [info ]: Successfully connected to LSP client
+17:41:07.087981 [info ]: Creating LSP service...
+17:41:07.151035 [info ]: Creating LSP server...
+17:41:07.151057 [info ]: Starting LSP server...
+18:18:40.501074 [info ]: Cached model count updated: 1 models (estimate)
+18:18:40.536443 [info ]: Cached model count updated: 1 models (accurate)
+18:18:40.793834 [info ]: Cached model count updated: 1 models (accurate)
+19:03:40.340645 [info ]: Cached model count updated: 1 models (estimate)
+19:03:40.589957 [info ]: Cached model count updated: 1 models (estimate)
+19:03:40.620277 [info ]: Cached model count updated: 1 models (accurate)
+19:03:40.819099 [info ]: Cached model count updated: 1 models (accurate)
+19:03:41.564419 [info ]: Cached model count updated: 1 models (estimate)
+19:03:41.800774 [info ]: Cached model count updated: 1 models (estimate)
+19:03:41.827862 [info ]: Cached model count updated: 1 models (accurate)
+19:03:41.981729 [info ]: Cached model count updated: 1 models (accurate)
+19:05:13.695476 [info ]: Cached model count updated: 1 models (estimate)
+19:05:13.718089 [error]: dbt1501: Failed to render SQL invalid operation: config requires all arguments to be defined
+(in models/customers.sql:1:1)
+  --> models/customers.sql:1:1
+19:05:13.720457 [info ]: Cached model count updated: 0 models (accurate)
+19:05:13.720535 [debug]: Incremental compilation - 0 nodes selected: {}
+16:48:23.021990 [info ]: 
+==================== Execution Summary =====================
+Finished 'unknown' with 1 error [47h 7m 16s]
+==================== 2025-11-29 16:49:11.764842 | 7aaaf340-f069-40e7-afef-1481933a6556 ====================
+16:49:11.766130 [info ]: Starting dbt LSP server
+16:49:11.766182 [info ]: Connecting to LSP client on port 8000
+16:49:11.766798 [info ]: Successfully connected to LSP client
+16:49:11.766811 [info ]: Creating LSP service...
+16:49:11.837191 [info ]: Creating LSP server...
+16:49:11.837210 [info ]: Starting LSP server...
+16:49:12.166840 [info ]: Cached model count updated: 3 models (estimate)
+16:49:12.218045 [info ]: Cached model count updated: 3 models (accurate)
+16:49:12.556433 [info ]: Cached model count updated: 3 models (accurate)

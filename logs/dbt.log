@@ -1,0 +1,1432 @@
+[0m12:41:14.003476 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 12:41:14.027452 | f37c058c-8093-420d-b412-b6edc0775879 ==============================
+[0m12:41:14.027452 [info ] [MainThread]: Running with dbt=1.7.10
+[0m12:41:14.028390 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/danielletruong/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/danielletruong/Desktop/dbt-learn-gt-init-master/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt ', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:41:14.098425 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m12:41:14.099164 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m12:41:14.132931 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.13133909, "process_user_time": 1.188333, "process_kernel_time": 0.12815, "process_mem_max_rss": "100237312", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m12:41:14.133487 [debug] [MainThread]: Command `cli deps` succeeded at 12:41:14.133382 after 0.13 seconds
+[0m12:41:14.133740 [debug] [MainThread]: Flushing usage events
+==================== 2025-11-27 17:42:38.873258 | 019ac668-f60f-7260-8efe-33d0f25b1ada ====================
+Installing dbt project and profile setup
+17:42:38.890738 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+17:42:38.891715 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+17:42:38.892145 [info ]: Info Setting up your profile...
+17:42:38.893110 [info ]: Info Creating new profile...
+17:42:41.463174 [info ]: Found dbt_cloud.yml configuration
+17:42:41.463244 [info ]: Found active project: Analytics (ID: 316558)
+17:43:54.876938 [error]: dbt1001: Failed to get project selection: IO error: read interrupted
+17:43:54.927555 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error [1m 16s]
+==================== 2025-11-27 17:44:01.123851 | 019ac66a-3763-7030-8a20-90b3b7a695e5 ====================
+Installing dbt project and profile setup
+17:44:01.124723 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+17:44:01.124964 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+17:44:01.125201 [info ]: Info Setting up your profile...
+17:44:01.125286 [info ]: Info Creating new profile...
+17:44:03.616949 [info ]: Found dbt_cloud.yml configuration
+17:44:03.617019 [info ]: Found active project: Analytics (ID: 316558)
+17:44:22.374556 [warn ]: dbt1001: Failed to fetch cloud config: Failed to fetch user credentials: error in response: status code 401 Unauthorized
+17:44:22.374601 [info ]: No cloud config found for this adapter/project
+17:48:50.481439 [info ]: Success Profile written to /Users/danielletruong/.dbt/profiles.yml
+17:48:50.481927 [info ]: Validating profile inputs, adapters, and connection
+
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+ Debugging profile: dev
+ Debugging dbt version: 2.0.0-preview.72
+ Debugging platform: macos aarch64 (unix)
+ Debugging adapter type: snowflake (remote)
+ Debugging dependencies:
+  git: OK
+ Debugging connection:
+  "account": "MP92836",
+  "user": "danielletruong",
+  "database": "raw",
+  "warehouse": "transforming",
+  "schema": "raw"
+17:48:52.085588 [error]: dbt1011: [Snowflake] 261004 (08004): failed to auth for unknown reason. HTTP: 404, URL: https://MP92836.snowflakecomputing.com:443/session/v1/login-request?databaseName=raw&requestId=158250be-d1c6-4ca1-406a-3bfec06975dd&request_guid=f7cf400c-f6c8-49bf-66b5-a7c957cfa6dc&schemaName=raw&warehouse=transforming
+17:48:52.740268 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 warning and 1 error for target 'dev' [4m 52s]
+==================== 2025-11-27 17:49:33.179468 | 019ac66f-4872-7c90-a120-ee6642b843f5 ====================
+Installing dbt project and profile setup
+17:49:33.196516 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+17:49:33.197369 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+17:49:33.197663 [info ]: Info Setting up your profile...
+17:49:33.202887 [info ]: Profile 'default' already exists. You can choose how to proceed.
+17:49:41.068911 [info ]: Info Creating new profile...
+17:49:42.088915 [info ]: Found dbt_cloud.yml configuration
+17:49:42.088983 [info ]: Found active project: Analytics (ID: 316558)
+17:49:45.675945 [warn ]: dbt1001: Failed to fetch cloud config: Failed to fetch user credentials: error in response: status code 401 Unauthorized
+17:49:45.676326 [info ]: No cloud config found for this adapter/project
+17:50:20.335951 [info ]: Info Backup created at /Users/danielletruong/.dbt/profiles.yml.bkp
+17:50:20.336528 [info ]: Success Profile written to /Users/danielletruong/.dbt/profiles.yml
+17:50:20.337182 [info ]: Validating profile inputs, adapters, and connection
+
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+ Debugging profile: dev
+ Debugging dbt version: 2.0.0-preview.72
+ Debugging platform: macos aarch64 (unix)
+ Debugging adapter type: snowflake (remote)
+ Debugging dependencies:
+  git: OK
+ Debugging connection:
+  "account": "MP92836",
+  "user": "danielletruong",
+  "database": "raw",
+  "warehouse": "transforming",
+  "schema": "raw"
+17:50:20.770287 [error]: dbt1011: [Snowflake] 261004 (08004): failed to auth for unknown reason. HTTP: 404, URL: https://MP92836.snowflakecomputing.com:443/session/v1/login-request?databaseName=raw&requestId=ea6a83fd-ecb5-49ba-4071-6fe07685d97f&request_guid=fd1c82e4-e0a1-4842-7d07-89786a5ded27&schemaName=raw&warehouse=transforming
+17:50:21.064746 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 warning and 1 error for target 'dev' [47.9s]
+==================== 2025-11-27 17:51:56.525276 | 019ac671-7864-78e3-9c0c-71da186885a6 ====================
+Installing dbt project and profile setup
+17:51:56.542058 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+17:51:56.542949 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+17:51:56.543222 [info ]: Info Setting up your profile...
+17:51:56.548404 [info ]: Profile 'default' already exists. You can choose how to proceed.
+17:51:59.608576 [info ]: Info Creating new profile...
+17:52:00.855444 [info ]: Found dbt_cloud.yml configuration
+17:52:00.855507 [info ]: Found active project: Analytics (ID: 316558)
+17:52:15.601528 [warn ]: dbt1001: Failed to fetch cloud config: Failed to fetch user credentials: error in response: status code 401 Unauthorized
+17:52:15.601940 [info ]: No cloud config found for this adapter/project
+17:52:36.200686 [info ]: Info Backup created at /Users/danielletruong/.dbt/profiles.yml.bkp
+17:52:36.201228 [info ]: Success Profile written to /Users/danielletruong/.dbt/profiles.yml
+17:52:36.201765 [info ]: Validating profile inputs, adapters, and connection
+
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+ Debugging profile: dev
+ Debugging dbt version: 2.0.0-preview.72
+ Debugging platform: macos aarch64 (unix)
+ Debugging adapter type: snowflake (remote)
+ Debugging dependencies:
+  git: OK
+ Debugging connection:
+  "account": "OJUZMRY-MP92836",
+  "user": "danielletruong",
+  "database": "raw",
+  "warehouse": "transforming",
+  "schema": "raw"
+17:52:37.540650 [error]: dbt1011: [Snowflake] 390100 (08004): Incorrect username or password was specified.
+17:52:37.888205 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 warning and 1 error for target 'dev' [41.4s]
+==================== 2025-11-27 17:53:05.444899 | 019ac672-85a3-7371-a30c-79d5ea00742e ====================
+Installing dbt project and profile setup
+17:53:05.445590 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+17:53:05.445676 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+17:53:05.445772 [info ]: Info Setting up your profile...
+17:53:05.446324 [info ]: Profile 'default' already exists. You can choose how to proceed.
+17:53:09.904897 [info ]: Info Editing existing profile...
+17:53:11.310670 [info ]: Editing existing profile - skipping cloud config fetch
+17:53:27.720979 [info ]: Info Backup created at /Users/danielletruong/.dbt/profiles.yml.bkp
+17:53:27.721325 [info ]: Success Profile written to /Users/danielletruong/.dbt/profiles.yml
+17:53:27.721413 [info ]: Validating profile inputs, adapters, and connection
+
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+ Debugging profile: dev
+ Debugging dbt version: 2.0.0-preview.72
+ Debugging platform: macos aarch64 (unix)
+ Debugging adapter type: snowflake (remote)
+ Debugging dependencies:
+  git: OK
+ Debugging connection:
+  "account": "OJUZMRY-MP92836",
+  "user": "DANIELLETRUONG",
+  "database": "raw",
+  "warehouse": "transforming",
+  "schema": "raw"
+17:53:28.670141 [error]: dbt1011: [Snowflake] 390100 (08004): Incorrect username or password was specified.
+17:53:28.942899 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [23.5s]
+==================== 2025-11-27 17:54:15.216115 | 019ac673-962f-7b93-bb67-56961f0ae289 ====================
+Installing dbt project and profile setup
+17:54:15.216792 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+17:54:15.216871 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+17:54:15.216978 [info ]: Info Setting up your profile...
+17:54:15.217294 [info ]: Profile 'default' already exists. You can choose how to proceed.
+17:54:16.227961 [info ]: Info Editing existing profile...
+17:54:17.104446 [info ]: Editing existing profile - skipping cloud config fetch
+17:54:29.695679 [info ]: Info Backup created at /Users/danielletruong/.dbt/profiles.yml.bkp
+17:54:29.696070 [info ]: Success Profile written to /Users/danielletruong/.dbt/profiles.yml
+17:54:29.696159 [info ]: Validating profile inputs, adapters, and connection
+
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+ Debugging profile: dev
+ Debugging dbt version: 2.0.0-preview.72
+ Debugging platform: macos aarch64 (unix)
+ Debugging adapter type: snowflake (remote)
+ Debugging dependencies:
+  git: OK
+ Debugging connection:
+  "authenticator": "username_password_mfa",
+  "account": "OJUZMRY-MP92836",
+  "user": "DANIELLETRUONG",
+  "database": "raw",
+  "warehouse": "transforming",
+  "schema": "raw"
+17:54:30.621066 [error]: dbt1011: [Snowflake] 390100 (08004): Incorrect username or password was specified.
+17:54:31.347682 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [16.1s]
+==================== 2025-11-27 18:01:33.920205 | 019ac67a-47d7-73e1-8a87-86dafea4ec3a ====================
+Installing dbt project and profile setup
+18:01:33.938106 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+18:01:33.938952 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+18:01:33.939216 [info ]: Info Setting up your profile...
+18:01:33.945126 [info ]: Profile 'default' already exists. You can choose how to proceed.
+18:01:49.209450 [info ]: Info Editing existing profile...
+18:01:50.025251 [info ]: Editing existing profile - skipping cloud config fetch
+18:02:07.395396 [info ]: Info Backup created at /Users/danielletruong/.dbt/profiles.yml.bkp
+18:02:07.396012 [info ]: Success Profile written to /Users/danielletruong/.dbt/profiles.yml
+18:02:07.396878 [info ]: Validating profile inputs, adapters, and connection
+
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+ Debugging profile: dev
+ Debugging dbt version: 2.0.0-preview.72
+ Debugging platform: macos aarch64 (unix)
+ Debugging adapter type: snowflake (remote)
+ Debugging dependencies:
+  git: OK
+ Debugging connection:
+  "authenticator": "externalbrowser",
+  "account": "OJUZMRY-MP92836",
+  "user": "DANIELLETRUONG",
+  "database": "raw",
+  "warehouse": "transforming",
+  "schema": "raw"
+18:02:07.714886 [error]: dbt1011: [Snowflake] 390190 (08004): There was an error related to the SAML Identity Provider account parameter. Contact Snowflake support.
+18:02:08.049309 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [34.1s]
+==================== 2025-11-27 18:02:16.550225 | 019ac67a-ee65-73a0-aaa1-44b2b447967b ====================
+Installing dbt project and profile setup
+18:02:16.550974 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+18:02:16.551074 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+18:02:16.551156 [info ]: Info Setting up your profile...
+18:02:16.551469 [info ]: Profile 'default' already exists. You can choose how to proceed.
+18:02:17.976044 [info ]: Info Editing existing profile...
+18:02:19.216789 [info ]: Editing existing profile - skipping cloud config fetch
+18:02:33.822400 [info ]: Info Backup created at /Users/danielletruong/.dbt/profiles.yml.bkp
+18:02:33.822837 [info ]: Success Profile written to /Users/danielletruong/.dbt/profiles.yml
+18:02:33.822923 [info ]: Validating profile inputs, adapters, and connection
+
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+ Debugging profile: dev
+ Debugging dbt version: 2.0.0-preview.72
+ Debugging platform: macos aarch64 (unix)
+ Debugging adapter type: snowflake (remote)
+ Debugging dependencies:
+  git: OK
+ Debugging connection:
+  "authenticator": "username_password_mfa",
+  "account": "OJUZMRY-MP92836",
+  "user": "DANIELLETRUONG",
+  "database": "raw",
+  "warehouse": "transforming",
+  "schema": "raw"
+18:02:34.872645 [error]: dbt1011: [Snowflake] 390100 (08004): Incorrect username or password was specified.
+18:02:35.144381 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [18.6s]
+==================== 2025-11-27 18:04:03.434404 | 019ac67c-8fe9-7e42-bf44-f8fe383cca18 ====================
+Installing dbt project and profile setup
+18:04:03.435024 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+18:04:03.435097 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+18:04:03.435192 [info ]: Info Setting up your profile...
+18:04:03.435532 [info ]: Profile 'default' already exists. You can choose how to proceed.
+18:04:05.546446 [info ]: Info Editing existing profile...
+18:04:06.681082 [info ]: Editing existing profile - skipping cloud config fetch
+18:06:23.396108 [info ]: Info Backup created at /Users/danielletruong/.dbt/profiles.yml.bkp
+dbt-fusion 2.0.0-preview.7218:06:23.396416 [info ]: Success Profile written to /Users/danielletruong/.dbt/profiles.yml
+18:06:23.396482 [info ]: Validating profile inputs, adapters, and connection
+
+
+   Loading ~/.dbt/profiles.yml
+ Debugging profile: dev
+ Debugging dbt version: 2.0.0-preview.72
+ Debugging platform: macos aarch64 (unix)
+ Debugging adapter type: snowflake (remote)
+ Debugging dependencies:
+  git: OK
+ Debugging connection:
+  "authenticator": "username_password_mfa",
+  "account": "OJUZMRY-MP92836",
+  "user": "DANIELLETRUONG",
+  "database": "RAW",
+  "warehouse": "TRANSFORMING",
+  "schema": "PUBLIC"
+18:06:24.448448 [error]: dbt1011: [Snowflake] 390100 (08004): Incorrect username or password was specified.
+18:06:25.625524 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [2m 22s]
+==================== 2025-11-27 18:07:32.220093 | 019ac67f-bf72-7451-b88f-4d75013d2e63 ====================
+Installing dbt project and profile setup
+18:07:32.237889 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+18:07:32.238919 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+18:07:32.239374 [info ]: Info Setting up your profile...
+18:07:32.245534 [info ]: Profile 'default' already exists. You can choose how to proceed.
+18:07:35.887529 [info ]: Info Creating new profile...
+18:07:37.052319 [info ]: Found dbt_cloud.yml configuration
+18:07:37.052388 [info ]: Found active project: Analytics (ID: 316558)
+18:08:39.737113 [warn ]: dbt1001: Failed to fetch cloud config: Failed to fetch user credentials: error in response: status code 401 Unauthorized
+18:08:39.737643 [info ]: No cloud config found for this adapter/project
+18:09:30.463679 [info ]: Info Backup created at /Users/danielletruong/.dbt/profiles.yml.bkp
+18:09:30.465514 [info ]: Success Profile written to /Users/danielletruong/.dbt/profiles.yml
+18:09:30.465929 [info ]: Validating profile inputs, adapters, and connection
+
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+ Debugging profile: dev
+ Debugging dbt version: 2.0.0-preview.72
+ Debugging platform: macos aarch64 (unix)
+ Debugging adapter type: snowflake (remote)
+ Debugging dependencies:
+  git: OK
+ Debugging connection:
+  "authenticator": "username_password_mfa",
+  "account": "OJUZMRY.MP92836",
+  "user": "DANIELLETRUONG",
+  "database": "RAW",
+  "warehouse": "TRANSFORMING",
+  "schema": "PUBLIC"
+18:09:40.994866 [error]: dbt1011: Post "https://OJUZMRY.MP92836.snowflakecomputing.com:443/session/v1/login-request?databaseName=RAW&requestId=62024cc9-c070-4080-4afd-608f9f7b3138&request_guid=bfd385a6-9a2a-4429-789e-c0867463b340&schemaName=PUBLIC&warehouse=TRANSFORMING": tls: failed to verify certificate: x509: certificate is valid for *.prod3.us-west-2.snowflakecomputing.com, *.us-west-2.snowflakecomputing.com, *.global.snowflakecomputing.com, *.snowflakecomputing.com, *.prod3.us-west-2.aws.snowflakecomputing.com, not OJUZMRY.MP92836.snowflakecomputing.com
+18:09:41.295818 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 warning and 1 error for target 'dev' [2m 9s]
+==================== 2025-11-27 18:10:13.371524 | 019ac682-34f2-7d53-9583-f200ca0ef0fd ====================
+Installing dbt project and profile setup
+18:10:13.389109 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+18:10:13.389943 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+18:10:13.390216 [info ]: Info Setting up your profile...
+18:10:13.396059 [info ]: Profile 'default' already exists. You can choose how to proceed.
+18:10:18.543099 [info ]: Info Editing existing profile...
+18:10:19.456717 [info ]: Editing existing profile - skipping cloud config fetch
+18:10:56.126162 [info ]: Info Backup created at /Users/danielletruong/.dbt/profiles.yml.bkp
+18:10:56.126632 [info ]: Success Profile written to /Users/danielletruong/.dbt/profiles.yml
+18:10:56.127721 [info ]: Validating profile inputs, adapters, and connection
+
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+ Debugging profile: dev
+ Debugging dbt version: 2.0.0-preview.72
+ Debugging platform: macos aarch64 (unix)
+ Debugging adapter type: snowflake (remote)
+ Debugging dependencies:
+  git: OK
+ Debugging connection:
+  "authenticator": "username_password_mfa",
+  "account": "OJUZMRY-MP92836",
+  "user": "DANIELLETRUONG",
+  "database": "RAW",
+  "warehouse": "TRANSFORMING",
+  "schema": "PUBLIC"
+18:10:57.559519 [debug]: Query executed on node unknown:
+select 1 as id
+ Debugging connection test: OK
+  Debugged All checks passed!
+18:10:58.055473 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully for target 'dev' [44.7s]
+==================== 2025-11-27 18:17:34.642058 | 019ac688-f0a8-7391-8c04-370f6ab8e500 ====================
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+18:17:36.236092 [debug]: Query executed on node model.jaffle_shop.customers:
+describe table "RAW"."JAFFLE_SHOP"."ORDERS"
+18:17:36.307251 [debug]: Query executed on node model.jaffle_shop.customers:
+describe table "RAW"."JAFFLE_SHOP"."CUSTOMERS"
+18:17:36.588636 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [1.9s]
+Processed: 1 model
+Summary: 1 total | 1 success
+==================== 2025-11-27 18:18:03.458835 | 019ac689-6141-7311-a9cf-9aeb7af18ad1 ====================
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+18:18:04.888578 [debug]: Query executed on node unknown:
+show terse schemas in database RAW
+    limit 10000
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */
+18:18:05.217874 [debug]: Query executed on node model.jaffle_shop.customers:
+SHOW OBJECTS IN SCHEMA "RAW"."PUBLIC" LIMIT 10000
+18:18:05.220038 [debug]: Writing runtime sql for node "model.jaffle_shop.customers"
+18:18:05.492171 [debug]: Query executed on node model.jaffle_shop.customers:
+create or replace   view RAW.PUBLIC.customers
+  
+   as (
+    with customers as (
+
+    select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from raw.jaffle_shop.customers
+
+),
+
+orders as (
+
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from raw.jaffle_shop.orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.customers"} */
+ Succeeded [  0.51s] model PUBLIC.customers (view)
+18:18:05.554641 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [2.1s]
+Processed: 1 model
+Summary: 1 total | 1 success
+{"data":{"log_version":3,"version":"2.0.0-preview.72"},"info":{"category":"","code":"","extra":{},"invocation_id":"019ac698-4238-7bc1-a1ca-438e6cd7b52f","level":"info","msg":" Rendering target/inline_a7d5d08d.sql","name":"CompileResource","pid":90740,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:34:19.071308Z"}}
+{"data":{"log_version":3,"version":"2.0.0-preview.72"},"info":{"category":"","code":"","extra":{},"invocation_id":"019ac698-4238-7bc1-a1ca-438e6cd7b52f","level":"info","msg":"Previewing model (sql_operation.inline)","name":"ShowNode","pid":90740,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:34:19.197942Z"}}
+{"data":{"log_version":3,"sql":"select * from (select * from (\nwith customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from raw.jaffle_shop.customers\n\n),\n\norders as (\n\n    select\n        id as order_id,\n        user_id as customer_id,\n        order_date,\n        status\n\n    from raw.jaffle_shop.orders\n\n)\nSELECT * FROM ORDERS\n) as __preview_sbq__ limit 1000) limit 10","version":"2.0.0-preview.72"},"info":{"category":"","code":"E017","extra":{},"invocation_id":"019ac698-4238-7bc1-a1ca-438e6cd7b52f","level":"debug","msg":"-- created_at: 2025-11-27T18:34:20.252707+00:00\n-- finished_at: 2025-11-27T18:34:20.966915+00:00\n-- elapsed: 714ms\n-- outcome: success\n-- dialect: snowflake\n-- node_id: not available\n-- query_id: not available\n-- desc: dbt run query\nselect * from (select * from (\nwith customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from raw.jaffle_shop.customers\n\n),\n\norders as (\n\n    select\n        id as order_id,\n        user_id as customer_id,\n        order_date,\n        status\n\n    from raw.jaffle_shop.orders\n\n)\nSELECT * FROM ORDERS\n) as __preview_sbq__ limit 1000) limit 10;","name":"SQLQuery","pid":90740,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:34:20.966951Z"}}
+{"data":{"columns":["ORDER_ID","CUSTOMER_ID","ORDER_DATE","STATUS"],"is_inline":true,"node_name":"inline_query","output_format":"json","preview":"[{\"ORDER_ID\":1,\"CUSTOMER_ID\":1,\"ORDER_DATE\":\"2018-01-01\",\"STATUS\":\"returned\"},{\"ORDER_ID\":2,\"CUSTOMER_ID\":3,\"ORDER_DATE\":\"2018-01-02\",\"STATUS\":\"completed\"},{\"ORDER_ID\":3,\"CUSTOMER_ID\":94,\"ORDER_DATE\":\"2018-01-04\",\"STATUS\":\"completed\"},{\"ORDER_ID\":4,\"CUSTOMER_ID\":50,\"ORDER_DATE\":\"2018-01-05\",\"STATUS\":\"completed\"},{\"ORDER_ID\":5,\"CUSTOMER_ID\":64,\"ORDER_DATE\":\"2018-01-05\",\"STATUS\":\"completed\"},{\"ORDER_ID\":6,\"CUSTOMER_ID\":54,\"ORDER_DATE\":\"2018-01-07\",\"STATUS\":\"completed\"},{\"ORDER_ID\":7,\"CUSTOMER_ID\":88,\"ORDER_DATE\":\"2018-01-09\",\"STATUS\":\"completed\"},{\"ORDER_ID\":8,\"CUSTOMER_ID\":2,\"ORDER_DATE\":\"2018-01-11\",\"STATUS\":\"returned\"},{\"ORDER_ID\":9,\"CUSTOMER_ID\":53,\"ORDER_DATE\":\"2018-01-12\",\"STATUS\":\"completed\"},{\"ORDER_ID\":10,\"CUSTOMER_ID\":7,\"ORDER_DATE\":\"2018-01-14\",\"STATUS\":\"completed\"}]","unique_id":"sql_operation.inline_query"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019ac698-4238-7bc1-a1ca-438e6cd7b52f","level":"info","msg":"[{\"ORDER_ID\":1,\"CUSTOMER_ID\":1,\"ORDER_DATE\":\"2018-01-01\",\"STATUS\":\"returned\"},{\"ORDER_ID\":2,\"CUSTOMER_ID\":3,\"ORDER_DATE\":\"2018-01-02\",\"STATUS\":\"completed\"},{\"ORDER_ID\":3,\"CUSTOMER_ID\":94,\"ORDER_DATE\":\"2018-01-04\",\"STATUS\":\"completed\"},{\"ORDER_ID\":4,\"CUSTOMER_ID\":50,\"ORDER_DATE\":\"2018-01-05\",\"STATUS\":\"completed\"},{\"ORDER_ID\":5,\"CUSTOMER_ID\":64,\"ORDER_DATE\":\"2018-01-05\",\"STATUS\":\"completed\"},{\"ORDER_ID\":6,\"CUSTOMER_ID\":54,\"ORDER_DATE\":\"2018-01-07\",\"STATUS\":\"completed\"},{\"ORDER_ID\":7,\"CUSTOMER_ID\":88,\"ORDER_DATE\":\"2018-01-09\",\"STATUS\":\"completed\"},{\"ORDER_ID\":8,\"CUSTOMER_ID\":2,\"ORDER_DATE\":\"2018-01-11\",\"STATUS\":\"returned\"},{\"ORDER_ID\":9,\"CUSTOMER_ID\":53,\"ORDER_DATE\":\"2018-01-12\",\"STATUS\":\"completed\"},{\"ORDER_ID\":10,\"CUSTOMER_ID\":7,\"ORDER_DATE\":\"2018-01-14\",\"STATUS\":\"completed\"}]","name":"ShowNode","pid":90740,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:34:21.021046Z"}}
+{"data":{"completed_at":"2025-11-27T18:34:21.086945Z","elapsed":2.5266098976135254,"log_version":3,"success":true,"version":"2.0.0-preview.72"},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019ac698-4238-7bc1-a1ca-438e6cd7b52f","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'show' successfully for target 'dev' [2.5s]","name":"CommandCompleted","pid":90740,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:34:21.087269Z"}}
+{"data":{"log_version":3,"version":"2.0.0-preview.72"},"info":{"category":"","code":"","extra":{},"invocation_id":"019ac6ae-a83c-7220-a563-795775c265f1","level":"info","msg":" Rendering target/inline_14f8061d.sql","name":"CompileResource","pid":91175,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:58:46.946541Z"}}
+{"data":{"log_version":3,"version":"2.0.0-preview.72"},"info":{"category":"","code":"","extra":{},"invocation_id":"019ac6ae-a83c-7220-a563-795775c265f1","level":"info","msg":"Previewing model (sql_operation.inline)","name":"ShowNode","pid":91175,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:58:47.035324Z"}}
+{"data":{"log_version":3,"sql":"select * from (select * from (\nwith customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from raw.jaffle_shop.customers\n\n)\nSELECT * FROM CUSTOMERS\n) as __preview_sbq__ limit 1000) limit 10","version":"2.0.0-preview.72"},"info":{"category":"","code":"E017","extra":{},"invocation_id":"019ac6ae-a83c-7220-a563-795775c265f1","level":"debug","msg":"-- created_at: 2025-11-27T18:58:48.112841+00:00\n-- finished_at: 2025-11-27T18:58:48.702638+00:00\n-- elapsed: 589ms\n-- outcome: success\n-- dialect: snowflake\n-- node_id: not available\n-- query_id: not available\n-- desc: dbt run query\nselect * from (select * from (\nwith customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from raw.jaffle_shop.customers\n\n)\nSELECT * FROM CUSTOMERS\n) as __preview_sbq__ limit 1000) limit 10;","name":"SQLQuery","pid":91175,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:58:48.702672Z"}}
+{"data":{"columns":["CUSTOMER_ID","FIRST_NAME","LAST_NAME"],"is_inline":true,"node_name":"inline_query","output_format":"json","preview":"[{\"CUSTOMER_ID\":1,\"FIRST_NAME\":\"Michael\",\"LAST_NAME\":\"P.\"},{\"CUSTOMER_ID\":2,\"FIRST_NAME\":\"Shawn\",\"LAST_NAME\":\"M.\"},{\"CUSTOMER_ID\":3,\"FIRST_NAME\":\"Kathleen\",\"LAST_NAME\":\"P.\"},{\"CUSTOMER_ID\":4,\"FIRST_NAME\":\"Jimmy\",\"LAST_NAME\":\"C.\"},{\"CUSTOMER_ID\":5,\"FIRST_NAME\":\"Katherine\",\"LAST_NAME\":\"R.\"},{\"CUSTOMER_ID\":6,\"FIRST_NAME\":\"Sarah\",\"LAST_NAME\":\"R.\"},{\"CUSTOMER_ID\":7,\"FIRST_NAME\":\"Martin\",\"LAST_NAME\":\"M.\"},{\"CUSTOMER_ID\":8,\"FIRST_NAME\":\"Frank\",\"LAST_NAME\":\"R.\"},{\"CUSTOMER_ID\":9,\"FIRST_NAME\":\"Jennifer\",\"LAST_NAME\":\"F.\"},{\"CUSTOMER_ID\":10,\"FIRST_NAME\":\"Henry\",\"LAST_NAME\":\"W.\"}]","unique_id":"sql_operation.inline_query"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019ac6ae-a83c-7220-a563-795775c265f1","level":"info","msg":"[{\"CUSTOMER_ID\":1,\"FIRST_NAME\":\"Michael\",\"LAST_NAME\":\"P.\"},{\"CUSTOMER_ID\":2,\"FIRST_NAME\":\"Shawn\",\"LAST_NAME\":\"M.\"},{\"CUSTOMER_ID\":3,\"FIRST_NAME\":\"Kathleen\",\"LAST_NAME\":\"P.\"},{\"CUSTOMER_ID\":4,\"FIRST_NAME\":\"Jimmy\",\"LAST_NAME\":\"C.\"},{\"CUSTOMER_ID\":5,\"FIRST_NAME\":\"Katherine\",\"LAST_NAME\":\"R.\"},{\"CUSTOMER_ID\":6,\"FIRST_NAME\":\"Sarah\",\"LAST_NAME\":\"R.\"},{\"CUSTOMER_ID\":7,\"FIRST_NAME\":\"Martin\",\"LAST_NAME\":\"M.\"},{\"CUSTOMER_ID\":8,\"FIRST_NAME\":\"Frank\",\"LAST_NAME\":\"R.\"},{\"CUSTOMER_ID\":9,\"FIRST_NAME\":\"Jennifer\",\"LAST_NAME\":\"F.\"},{\"CUSTOMER_ID\":10,\"FIRST_NAME\":\"Henry\",\"LAST_NAME\":\"W.\"}]","name":"ShowNode","pid":91175,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:58:48.749300Z"}}
+{"data":{"completed_at":"2025-11-27T18:58:48.804408Z","elapsed":2.3358888626098633,"log_version":3,"success":true,"version":"2.0.0-preview.72"},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019ac6ae-a83c-7220-a563-795775c265f1","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'show' successfully for target 'dev' [2.3s]","name":"CommandCompleted","pid":91175,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:58:48.804781Z"}}
+{"data":{"log_version":3,"version":"2.0.0-preview.72"},"info":{"category":"","code":"","extra":{},"invocation_id":"019ac6ae-f5ac-7242-ab78-27fc0c5945c5","level":"info","msg":" Rendering target/inline_d274867c.sql","name":"CompileResource","pid":91185,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:59:06.675062Z"}}
+{"data":{"log_version":3,"version":"2.0.0-preview.72"},"info":{"category":"","code":"","extra":{},"invocation_id":"019ac6ae-f5ac-7242-ab78-27fc0c5945c5","level":"info","msg":"Previewing model (sql_operation.inline)","name":"ShowNode","pid":91185,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:59:06.761282Z"}}
+{"data":{"log_version":3,"sql":"select * from (select * from (\nwith customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from raw.jaffle_shop.customers\n\n),\n\norders as (\n\n    select\n        id as order_id,\n        user_id as customer_id,\n        order_date,\n        status\n\n    from raw.jaffle_shop.orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n)\nSELECT * FROM CUSTOMER_ORDERS\n) as __preview_sbq__ limit 1000) limit 10","version":"2.0.0-preview.72"},"info":{"category":"","code":"E017","extra":{},"invocation_id":"019ac6ae-f5ac-7242-ab78-27fc0c5945c5","level":"debug","msg":"-- created_at: 2025-11-27T18:59:07.650536+00:00\n-- finished_at: 2025-11-27T18:59:07.808114+00:00\n-- elapsed: 157ms\n-- outcome: success\n-- dialect: snowflake\n-- node_id: not available\n-- query_id: not available\n-- desc: dbt run query\nselect * from (select * from (\nwith customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from raw.jaffle_shop.customers\n\n),\n\norders as (\n\n    select\n        id as order_id,\n        user_id as customer_id,\n        order_date,\n        status\n\n    from raw.jaffle_shop.orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n)\nSELECT * FROM CUSTOMER_ORDERS\n) as __preview_sbq__ limit 1000) limit 10;","name":"SQLQuery","pid":91185,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:59:07.808190Z"}}
+{"data":{"columns":["CUSTOMER_ID","FIRST_ORDER_DATE","MOST_RECENT_ORDER_DATE","NUMBER_OF_ORDERS"],"is_inline":true,"node_name":"inline_query","output_format":"json","preview":"[{\"CUSTOMER_ID\":1,\"FIRST_ORDER_DATE\":\"2018-01-01\",\"MOST_RECENT_ORDER_DATE\":\"2018-02-10\",\"NUMBER_OF_ORDERS\":2},{\"CUSTOMER_ID\":53,\"FIRST_ORDER_DATE\":\"2018-01-12\",\"MOST_RECENT_ORDER_DATE\":\"2018-03-11\",\"NUMBER_OF_ORDERS\":2},{\"CUSTOMER_ID\":66,\"FIRST_ORDER_DATE\":\"2018-02-17\",\"MOST_RECENT_ORDER_DATE\":\"2018-04-03\",\"NUMBER_OF_ORDERS\":3},{\"CUSTOMER_ID\":63,\"FIRST_ORDER_DATE\":\"2018-03-03\",\"MOST_RECENT_ORDER_DATE\":\"2018-04-03\",\"NUMBER_OF_ORDERS\":2},{\"CUSTOMER_ID\":21,\"FIRST_ORDER_DATE\":\"2018-03-28\",\"MOST_RECENT_ORDER_DATE\":\"2018-03-28\",\"NUMBER_OF_ORDERS\":1},{\"CUSTOMER_ID\":46,\"FIRST_ORDER_DATE\":\"2018-03-24\",\"MOST_RECENT_ORDER_DATE\":\"2018-03-27\",\"NUMBER_OF_ORDERS\":2},{\"CUSTOMER_ID\":47,\"FIRST_ORDER_DATE\":\"2018-03-26\",\"MOST_RECENT_ORDER_DATE\":\"2018-03-31\",\"NUMBER_OF_ORDERS\":2},{\"CUSTOMER_ID\":86,\"FIRST_ORDER_DATE\":\"2018-01-24\",\"MOST_RECENT_ORDER_DATE\":\"2018-01-24\",\"NUMBER_OF_ORDERS\":1},{\"CUSTOMER_ID\":85,\"FIRST_ORDER_DATE\":\"2018-02-10\",\"MOST_RECENT_ORDER_DATE\":\"2018-04-09\",\"NUMBER_OF_ORDERS\":2},{\"CUSTOMER_ID\":28,\"FIRST_ORDER_DATE\":\"2018-02-04\",\"MOST_RECENT_ORDER_DATE\":\"2018-02-04\",\"NUMBER_OF_ORDERS\":1}]","unique_id":"sql_operation.inline_query"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019ac6ae-f5ac-7242-ab78-27fc0c5945c5","level":"info","msg":"[{\"CUSTOMER_ID\":1,\"FIRST_ORDER_DATE\":\"2018-01-01\",\"MOST_RECENT_ORDER_DATE\":\"2018-02-10\",\"NUMBER_OF_ORDERS\":2},{\"CUSTOMER_ID\":53,\"FIRST_ORDER_DATE\":\"2018-01-12\",\"MOST_RECENT_ORDER_DATE\":\"2018-03-11\",\"NUMBER_OF_ORDERS\":2},{\"CUSTOMER_ID\":66,\"FIRST_ORDER_DATE\":\"2018-02-17\",\"MOST_RECENT_ORDER_DATE\":\"2018-04-03\",\"NUMBER_OF_ORDERS\":3},{\"CUSTOMER_ID\":63,\"FIRST_ORDER_DATE\":\"2018-03-03\",\"MOST_RECENT_ORDER_DATE\":\"2018-04-03\",\"NUMBER_OF_ORDERS\":2},{\"CUSTOMER_ID\":21,\"FIRST_ORDER_DATE\":\"2018-03-28\",\"MOST_RECENT_ORDER_DATE\":\"2018-03-28\",\"NUMBER_OF_ORDERS\":1},{\"CUSTOMER_ID\":46,\"FIRST_ORDER_DATE\":\"2018-03-24\",\"MOST_RECENT_ORDER_DATE\":\"2018-03-27\",\"NUMBER_OF_ORDERS\":2},{\"CUSTOMER_ID\":47,\"FIRST_ORDER_DATE\":\"2018-03-26\",\"MOST_RECENT_ORDER_DATE\":\"2018-03-31\",\"NUMBER_OF_ORDERS\":2},{\"CUSTOMER_ID\":86,\"FIRST_ORDER_DATE\":\"2018-01-24\",\"MOST_RECENT_ORDER_DATE\":\"2018-01-24\",\"NUMBER_OF_ORDERS\":1},{\"CUSTOMER_ID\":85,\"FIRST_ORDER_DATE\":\"2018-02-10\",\"MOST_RECENT_ORDER_DATE\":\"2018-04-09\",\"NUMBER_OF_ORDERS\":2},{\"CUSTOMER_ID\":28,\"FIRST_ORDER_DATE\":\"2018-02-04\",\"MOST_RECENT_ORDER_DATE\":\"2018-02-04\",\"NUMBER_OF_ORDERS\":1}]","name":"ShowNode","pid":91185,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:59:07.847993Z"}}
+{"data":{"completed_at":"2025-11-27T18:59:07.915025Z","elapsed":1.6297589540481567,"log_version":3,"success":true,"version":"2.0.0-preview.72"},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019ac6ae-f5ac-7242-ab78-27fc0c5945c5","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'show' successfully for target 'dev' [1.6s]","name":"CommandCompleted","pid":91185,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:59:07.915155Z"}}
+{"data":{"log_version":3,"version":"2.0.0-preview.72"},"info":{"category":"","code":"","extra":{},"invocation_id":"019ac6af-1a60-72b2-b601-71914ea02fc2","level":"info","msg":" Rendering target/inline_554f9a1b.sql","name":"CompileResource","pid":91205,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:59:16.072824Z"}}
+{"data":{"log_version":3,"version":"2.0.0-preview.72"},"info":{"category":"","code":"","extra":{},"invocation_id":"019ac6af-1a60-72b2-b601-71914ea02fc2","level":"info","msg":"Previewing model (sql_operation.inline)","name":"ShowNode","pid":91205,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:59:16.172016Z"}}
+{"data":{"log_version":3,"sql":"select * from (select * from (\nwith customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from raw.jaffle_shop.customers\n\n),\n\norders as (\n\n    select\n        id as order_id,\n        user_id as customer_id,\n        order_date,\n        status\n\n    from raw.jaffle_shop.orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.first_name,\n        customers.last_name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\nSELECT * FROM FINAL\n) as __preview_sbq__ limit 1000) limit 10","version":"2.0.0-preview.72"},"info":{"category":"","code":"E017","extra":{},"invocation_id":"019ac6af-1a60-72b2-b601-71914ea02fc2","level":"debug","msg":"-- created_at: 2025-11-27T18:59:16.410362+00:00\n-- finished_at: 2025-11-27T18:59:16.577895+00:00\n-- elapsed: 167ms\n-- outcome: success\n-- dialect: snowflake\n-- node_id: not available\n-- query_id: not available\n-- desc: dbt run query\nselect * from (select * from (\nwith customers as (\n\n    select\n        id as customer_id,\n        first_name,\n        last_name\n\n    from raw.jaffle_shop.customers\n\n),\n\norders as (\n\n    select\n        id as order_id,\n        user_id as customer_id,\n        order_date,\n        status\n\n    from raw.jaffle_shop.orders\n\n),\n\ncustomer_orders as (\n\n    select\n        customer_id,\n\n        min(order_date) as first_order_date,\n        max(order_date) as most_recent_order_date,\n        count(order_id) as number_of_orders\n\n    from orders\n\n    group by 1\n\n),\n\n\nfinal as (\n\n    select\n        customers.customer_id,\n        customers.first_name,\n        customers.last_name,\n        customer_orders.first_order_date,\n        customer_orders.most_recent_order_date,\n        coalesce(customer_orders.number_of_orders, 0) as number_of_orders\n\n    from customers\n\n    left join customer_orders using (customer_id)\n\n)\nSELECT * FROM FINAL\n) as __preview_sbq__ limit 1000) limit 10;","name":"SQLQuery","pid":91205,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:59:16.577998Z"}}
+{"data":{"columns":["CUSTOMER_ID","FIRST_NAME","LAST_NAME","FIRST_ORDER_DATE","MOST_RECENT_ORDER_DATE","NUMBER_OF_ORDERS"],"is_inline":true,"node_name":"inline_query","output_format":"json","preview":"[{\"CUSTOMER_ID\":1,\"FIRST_NAME\":\"Michael\",\"LAST_NAME\":\"P.\",\"FIRST_ORDER_DATE\":\"2018-01-01\",\"MOST_RECENT_ORDER_DATE\":\"2018-02-10\",\"NUMBER_OF_ORDERS\":2},{\"CUSTOMER_ID\":2,\"FIRST_NAME\":\"Shawn\",\"LAST_NAME\":\"M.\",\"FIRST_ORDER_DATE\":\"2018-01-11\",\"MOST_RECENT_ORDER_DATE\":\"2018-01-11\",\"NUMBER_OF_ORDERS\":1},{\"CUSTOMER_ID\":3,\"FIRST_NAME\":\"Kathleen\",\"LAST_NAME\":\"P.\",\"FIRST_ORDER_DATE\":\"2018-01-02\",\"MOST_RECENT_ORDER_DATE\":\"2018-03-11\",\"NUMBER_OF_ORDERS\":3},{\"CUSTOMER_ID\":4,\"FIRST_NAME\":\"Jimmy\",\"LAST_NAME\":\"C.\",\"FIRST_ORDER_DATE\":null,\"MOST_RECENT_ORDER_DATE\":null,\"NUMBER_OF_ORDERS\":0},{\"CUSTOMER_ID\":5,\"FIRST_NAME\":\"Katherine\",\"LAST_NAME\":\"R.\",\"FIRST_ORDER_DATE\":null,\"MOST_RECENT_ORDER_DATE\":null,\"NUMBER_OF_ORDERS\":0},{\"CUSTOMER_ID\":6,\"FIRST_NAME\":\"Sarah\",\"LAST_NAME\":\"R.\",\"FIRST_ORDER_DATE\":\"2018-02-19\",\"MOST_RECENT_ORDER_DATE\":\"2018-02-19\",\"NUMBER_OF_ORDERS\":1},{\"CUSTOMER_ID\":7,\"FIRST_NAME\":\"Martin\",\"LAST_NAME\":\"M.\",\"FIRST_ORDER_DATE\":\"2018-01-14\",\"MOST_RECENT_ORDER_DATE\":\"2018-01-14\",\"NUMBER_OF_ORDERS\":1},{\"CUSTOMER_ID\":8,\"FIRST_NAME\":\"Frank\",\"LAST_NAME\":\"R.\",\"FIRST_ORDER_DATE\":\"2018-01-29\",\"MOST_RECENT_ORDER_DATE\":\"2018-03-12\",\"NUMBER_OF_ORDERS\":2},{\"CUSTOMER_ID\":9,\"FIRST_NAME\":\"Jennifer\",\"LAST_NAME\":\"F.\",\"FIRST_ORDER_DATE\":\"2018-03-17\",\"MOST_RECENT_ORDER_DATE\":\"2018-03-17\",\"NUMBER_OF_ORDERS\":1},{\"CUSTOMER_ID\":10,\"FIRST_NAME\":\"Henry\",\"LAST_NAME\":\"W.\",\"FIRST_ORDER_DATE\":null,\"MOST_RECENT_ORDER_DATE\":null,\"NUMBER_OF_ORDERS\":0}]","unique_id":"sql_operation.inline_query"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019ac6af-1a60-72b2-b601-71914ea02fc2","level":"info","msg":"[{\"CUSTOMER_ID\":1,\"FIRST_NAME\":\"Michael\",\"LAST_NAME\":\"P.\",\"FIRST_ORDER_DATE\":\"2018-01-01\",\"MOST_RECENT_ORDER_DATE\":\"2018-02-10\",\"NUMBER_OF_ORDERS\":2},{\"CUSTOMER_ID\":2,\"FIRST_NAME\":\"Shawn\",\"LAST_NAME\":\"M.\",\"FIRST_ORDER_DATE\":\"2018-01-11\",\"MOST_RECENT_ORDER_DATE\":\"2018-01-11\",\"NUMBER_OF_ORDERS\":1},{\"CUSTOMER_ID\":3,\"FIRST_NAME\":\"Kathleen\",\"LAST_NAME\":\"P.\",\"FIRST_ORDER_DATE\":\"2018-01-02\",\"MOST_RECENT_ORDER_DATE\":\"2018-03-11\",\"NUMBER_OF_ORDERS\":3},{\"CUSTOMER_ID\":4,\"FIRST_NAME\":\"Jimmy\",\"LAST_NAME\":\"C.\",\"FIRST_ORDER_DATE\":null,\"MOST_RECENT_ORDER_DATE\":null,\"NUMBER_OF_ORDERS\":0},{\"CUSTOMER_ID\":5,\"FIRST_NAME\":\"Katherine\",\"LAST_NAME\":\"R.\",\"FIRST_ORDER_DATE\":null,\"MOST_RECENT_ORDER_DATE\":null,\"NUMBER_OF_ORDERS\":0},{\"CUSTOMER_ID\":6,\"FIRST_NAME\":\"Sarah\",\"LAST_NAME\":\"R.\",\"FIRST_ORDER_DATE\":\"2018-02-19\",\"MOST_RECENT_ORDER_DATE\":\"2018-02-19\",\"NUMBER_OF_ORDERS\":1},{\"CUSTOMER_ID\":7,\"FIRST_NAME\":\"Martin\",\"LAST_NAME\":\"M.\",\"FIRST_ORDER_DATE\":\"2018-01-14\",\"MOST_RECENT_ORDER_DATE\":\"2018-01-14\",\"NUMBER_OF_ORDERS\":1},{\"CUSTOMER_ID\":8,\"FIRST_NAME\":\"Frank\",\"LAST_NAME\":\"R.\",\"FIRST_ORDER_DATE\":\"2018-01-29\",\"MOST_RECENT_ORDER_DATE\":\"2018-03-12\",\"NUMBER_OF_ORDERS\":2},{\"CUSTOMER_ID\":9,\"FIRST_NAME\":\"Jennifer\",\"LAST_NAME\":\"F.\",\"FIRST_ORDER_DATE\":\"2018-03-17\",\"MOST_RECENT_ORDER_DATE\":\"2018-03-17\",\"NUMBER_OF_ORDERS\":1},{\"CUSTOMER_ID\":10,\"FIRST_NAME\":\"Henry\",\"LAST_NAME\":\"W.\",\"FIRST_ORDER_DATE\":null,\"MOST_RECENT_ORDER_DATE\":null,\"NUMBER_OF_ORDERS\":0}]","name":"ShowNode","pid":91205,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:59:16.620426Z"}}
+{"data":{"completed_at":"2025-11-27T18:59:16.671092Z","elapsed":0.9894750118255615,"log_version":3,"success":true,"version":"2.0.0-preview.72"},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019ac6af-1a60-72b2-b601-71914ea02fc2","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'show' successfully for target 'dev' [989ms]","name":"CommandCompleted","pid":91205,"thread":"tokio-runtime-worker","ts":"2025-11-27T18:59:16.671146Z"}}
+==================== 2025-11-27 19:01:05.427332 | 019ac6b0-c712-7ae0-b9c0-4290a8928ecc ====================
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+19:01:07.724428 [debug]: Query executed on node unknown:
+show terse schemas in database RAW
+    limit 10000
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */
+19:01:08.083952 [debug]: Query executed on node model.jaffle_shop.customers:
+SHOW OBJECTS IN SCHEMA "RAW"."PUBLIC" LIMIT 10000
+19:01:08.086744 [debug]: Writing runtime sql for node "model.jaffle_shop.customers"
+19:01:08.317745 [debug]: Query executed on node model.jaffle_shop.customers:
+create or replace   view RAW.PUBLIC.customers
+  
+   as (
+    with customers as (
+
+    select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from raw.jaffle_shop.customers
+
+),
+
+orders as (
+
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from raw.jaffle_shop.orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.customers"} */
+ Succeeded [  0.50s] model PUBLIC.customers (view)
+19:01:08.378634 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [3.0s]
+Processed: 1 model
+Summary: 1 total | 1 success
+==================== 2025-11-27 19:03:44.895389 | 019ac6b3-35fe-72e1-9dae-7f0811e763b3 ====================
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+19:03:46.869420 [debug]: Query executed on node unknown:
+show terse schemas in database RAW
+    limit 10000
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */
+19:03:47.203494 [debug]: Query executed on node model.jaffle_shop.customers:
+SHOW OBJECTS IN SCHEMA "RAW"."PUBLIC" LIMIT 10000
+19:03:47.203814 [debug]: Applying DROP to: RAW.PUBLIC.CUSTOMERS
+19:03:47.420132 [debug]: Query executed on node model.jaffle_shop.customers:
+drop view if exists RAW.PUBLIC.CUSTOMERS cascade
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.customers"} */
+19:03:47.423121 [debug]: Writing runtime sql for node "model.jaffle_shop.customers"
+19:03:48.091198 [debug]: Query executed on node model.jaffle_shop.customers:
+create or replace transient  table RAW.PUBLIC.customers
+    
+    
+    
+    as (with customers as (
+
+    select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from raw.jaffle_shop.customers
+
+),
+
+orders as (
+
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from raw.jaffle_shop.orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+    )
+
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.customers"} */
+ Succeeded [  1.13s] model PUBLIC.customers (table)
+19:03:48.145215 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [3.2s]
+Processed: 1 model
+Summary: 1 total | 1 success
+==================== 2025-11-27 19:06:18.687872 | 019ac6b5-8ebe-7973-9541-408ccd28b21e ====================
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+19:06:20.145471 [debug]: Query executed on node unknown:
+show terse schemas in database RAW
+    limit 10000
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */
+19:06:20.537144 [debug]: Query executed on node model.jaffle_shop.customers:
+SHOW OBJECTS IN SCHEMA "RAW"."PUBLIC" LIMIT 10000
+19:06:20.537619 [debug]: Dropping relation RAW.PUBLIC.CUSTOMERS because it is of type table
+19:06:20.537834 [debug]: Applying DROP to: RAW.PUBLIC.CUSTOMERS
+19:06:20.695753 [debug]: Query executed on node model.jaffle_shop.customers:
+drop table if exists RAW.PUBLIC.CUSTOMERS cascade
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.customers"} */
+19:06:20.696933 [debug]: Writing runtime sql for node "model.jaffle_shop.customers"
+19:06:20.902329 [debug]: Query executed on node model.jaffle_shop.customers:
+create or replace   view RAW.PUBLIC.customers
+  
+   as (
+    
+
+
+with customers as (
+
+    select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from raw.jaffle_shop.customers
+
+),
+
+orders as (
+
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from raw.jaffle_shop.orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.customers"} */
+ Succeeded [  0.67s] model PUBLIC.customers (view)
+19:06:20.957307 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [2.3s]
+Processed: 1 model
+Summary: 1 total | 1 success
+==================== 2025-11-27 19:12:57.476852 | 019ac6bb-a47c-73f1-8367-08d3f3683978 ====================
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+19:12:59.385120 [debug]: Query executed on node unknown:
+show terse schemas in database RAW
+    limit 10000
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */
+19:12:59.444298 [error]: dbt0101: mismatched input ')' expecting one of 'SELECT', 'TABLE', 'WITH', '('
+  --> models/customers.sql:11:1 (target/compiled/models/customers.sql:7:1)
+19:12:59.501072 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error for target 'dev' [2.0s]
+Processed: 1 model
+Summary: 1 total | 1 error
+==================== 2025-11-27 19:13:36.905637 | 019ac6bc-3e80-7742-aca6-b7c873aa1c97 ====================
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+19:13:38.580736 [debug]: Query executed on node unknown:
+show terse schemas in database RAW
+    limit 10000
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */
+19:13:38.970183 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_orders:
+SHOW OBJECTS IN SCHEMA "RAW"."PUBLIC" LIMIT 10000
+19:13:38.972032 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_jaffle_shop_orders"
+19:13:39.765435 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_orders:
+create or replace transient  table RAW.PUBLIC.stg_jaffle_shop_orders
+    
+    
+    
+    as ( select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from raw.jaffle_shop.orders
+    )
+
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.stg_jaffle_shop_orders"} */
+ Succeeded [  1.09s] model PUBLIC.stg_jaffle_shop_orders (table)
+19:13:39.833645 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [2.9s]
+Processed: 1 model
+Summary: 1 total | 1 success
+==================== 2025-11-27 19:13:48.767325 | 019ac6bc-6cde-7542-a229-7ef70f8853e5 ====================
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+19:13:50.234110 [debug]: Query executed on node unknown:
+show terse schemas in database RAW
+    limit 10000
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */
+19:13:50.527226 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_customers:
+SHOW OBJECTS IN SCHEMA "RAW"."PUBLIC" LIMIT 10000
+19:13:50.528393 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_jaffle_shop_customers"
+19:13:51.148614 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_customers:
+create or replace transient  table RAW.PUBLIC.stg_jaffle_shop_customers
+    
+    
+    
+    as ( select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from raw.jaffle_shop.customers
+    )
+
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.stg_jaffle_shop_customers"} */
+ Succeeded [  0.86s] model PUBLIC.stg_jaffle_shop_customers (table)
+19:13:51.205234 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [2.4s]
+Processed: 1 model
+Summary: 1 total | 1 success
+==================== 2025-11-27 19:15:46.643646 | 019ac6be-3952-7922-929c-8a2ca9922b65 ====================
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+19:15:48.080883 [debug]: Query executed on node unknown:
+show terse schemas in database RAW
+    limit 10000
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */
+19:15:48.461191 [debug]: Query executed on node model.jaffle_shop.customers:
+SHOW OBJECTS IN SCHEMA "RAW"."PUBLIC" LIMIT 10000
+19:15:48.462363 [debug]: Writing runtime sql for node "model.jaffle_shop.customers"
+19:15:48.712354 [debug]: Query executed on node model.jaffle_shop.customers:
+create or replace   view RAW.PUBLIC.customers
+  
+   as (
+    
+
+
+with customers as (
+
+    select * from RAW.PUBLIC.stg_jaffle_shop_customers
+   
+),
+
+orders as (
+
+   select * from RAW.PUBLIC.stg_jaffle_shop_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.customers"} */
+ Succeeded [  0.51s] model PUBLIC.customers (view)
+19:15:48.774594 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [2.1s]
+Processed: 1 model
+Summary: 1 total | 1 success
+==================== 2025-11-29 16:17:38.686180 | 019ad067-db7b-7803-8a46-494aa3c7d279 ====================
+dbt-fusion 2.0.0-preview.72
+16:17:38.691148 [error]: dbt1005: No profiles.yml found at `/Users/danielletruong/.dbt/profiles.yml` or `/Users/danielletruong/Desktop/dbt-learn-gt-init-master/profiles.yml`. 
+
+suggestion: Run `dbt init` to create a profiles.yml file and connect to your database. 
+16:17:38.806679 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error [120ms]
+==================== 2025-11-29 16:18:19.553108 | 019ad068-7b20-7f71-ba89-0ee3fdbccf19 ====================
+Installing dbt project and profile setup
+16:18:19.553481 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+16:18:19.554709 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+16:18:19.554909 [info ]: Info Setting up your profile...
+16:18:19.555097 [info ]: Info Creating new profile...
+16:18:29.116758 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+==================== 2025-11-29 16:19:38.458814 | 019ad069-af5a-7d33-ae5c-202db38dc613 ====================
+Installing dbt project and profile setup
+16:19:38.459104 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+16:19:38.460127 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+16:19:38.460538 [info ]: Info Setting up your profile...
+16:19:38.460724 [info ]: Info Creating new profile...
+16:19:49.079025 [error]: dbt1001: Failed to get adapter selection: IO error: read interrupted
+16:19:49.119002 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error [10.7s]
+==================== 2025-11-29 16:19:58.550096 | 019ad069-fdd5-7393-9cd8-59679a08ff57 ====================
+dbt-fusion 2.0.0-preview.72
+16:19:58.550936 [error]: dbt1005: No profiles.yml found at `/Users/danielletruong/.dbt/profiles.yml` or `/Users/danielletruong/Desktop/dbt-learn-gt-init-master/profiles.yml`. 
+
+suggestion: Run `dbt init` to create a profiles.yml file and connect to your database. 
+16:19:58.669447 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error [119ms]
+==================== 2025-11-29 16:20:09.974729 | 019ad06a-2a75-7832-a8ca-8bd58fbbbe81 ====================
+Installing dbt project and profile setup
+16:20:09.975021 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+16:20:09.975109 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+16:20:09.975244 [info ]: Info Setting up your profile...
+16:20:09.975423 [info ]: Info Creating new profile...
+16:20:10.801235 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+16:22:03.187501 [info ]: Success Profile written to /Users/danielletruong/.dbt/profiles.yml
+dbt-fusion 2.0.0-preview.7216:22:03.187675 [info ]: Validating profile inputs, adapters, and connection
+
+
+   Loading ~/.dbt/profiles.yml
+ Debugging profile: dev
+ Debugging dbt version: 2.0.0-preview.72
+ Debugging platform: macos aarch64 (unix)
+ Debugging adapter type: snowflake (remote)
+ Debugging dependencies:
+  git: OK
+ Debugging connection:
+  "account": "OJUZMRY-MP92836",
+  "user": "DANIELLETRUONG",
+  "database": "raw",
+  "warehouse": "transforming",
+  "schema": "raw"
+16:22:04.661896 [error]: dbt1011: [Snowflake] 390100 (08004): Incorrect username or password was specified.
+16:22:05.081701 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [1m 55s]
+==================== 2025-11-29 16:22:15.882758 | 019ad06c-164a-7a53-be79-d186705cad34 ====================
+Installing dbt project and profile setup
+16:22:15.883043 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+16:22:15.883361 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+16:22:15.883546 [info ]: Info Setting up your profile...
+16:22:15.884228 [info ]: Profile 'default' already exists. You can choose how to proceed.
+16:22:19.300451 [info ]: Info Editing existing profile...
+16:22:20.105242 [info ]: Editing existing profile - skipping cloud config fetch
+16:22:36.548480 [info ]: Info Backup created at /Users/danielletruong/.dbt/profiles.yml.bkp
+16:22:36.549040 [info ]: Success Profile written to /Users/danielletruong/.dbt/profiles.yml
+16:22:36.549136 [info ]: Validating profile inputs, adapters, and connection
+
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+ Debugging profile: dev
+ Debugging dbt version: 2.0.0-preview.72
+ Debugging platform: macos aarch64 (unix)
+ Debugging adapter type: snowflake (remote)
+ Debugging dependencies:
+  git: OK
+ Debugging connection:
+  "account": "OJUZMRY-MP92836",
+  "user": "DANIELLETRUONG",
+  "database": "raw",
+  "warehouse": "transforming",
+  "schema": "raw"
+16:22:37.688962 [debug]: Query executed on node unknown:
+select 1 as id
+ Debugging connection test: OK
+  Debugged All checks passed!
+16:22:37.973545 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully for target 'dev' [22.1s]
+==================== 2025-11-29 16:22:50.475036 | 019ad06c-9d6a-76d2-95a2-e784374c387e ====================
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+16:22:51.916510 [debug]: Query executed on node unknown:
+show terse schemas in database raw
+    limit 10000
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */
+16:22:52.005509 [debug]: Query executed on node unknown:
+create schema if not exists raw.raw
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */
+16:22:52.310537 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_customers:
+SHOW OBJECTS IN SCHEMA "RAW"."RAW" LIMIT 10000
+16:22:52.312004 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_jaffle_shop_customers"
+16:22:52.503199 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_orders:
+SHOW OBJECTS IN SCHEMA "RAW"."RAW" LIMIT 10000
+16:22:52.505125 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_jaffle_shop_orders"
+16:22:52.657057 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_customers:
+create or replace   view raw.raw.stg_jaffle_shop_customers
+  
+   as (
+     select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from raw.jaffle_shop.customers
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.stg_jaffle_shop_customers"} */
+ Succeeded [  0.58s] model raw.stg_jaffle_shop_customers (view)
+16:22:52.692842 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_orders:
+create or replace   view raw.raw.stg_jaffle_shop_orders
+  
+   as (
+     select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from raw.jaffle_shop.orders
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.stg_jaffle_shop_orders"} */
+ Succeeded [  0.62s] model raw.stg_jaffle_shop_orders (view)
+16:22:52.696303 [debug]: Writing runtime sql for node "model.jaffle_shop.dim_customers"
+16:22:53.046100 [debug]: Query executed on node model.jaffle_shop.dim_customers:
+create or replace   view raw.raw.dim_customers
+  
+   as (
+    
+with customers as (
+
+    select * from raw.raw.stg_jaffle_shop_customers
+   
+),
+
+orders as (
+
+   select * from raw.raw.stg_jaffle_shop_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.dim_customers"} */
+ Succeeded [  0.35s] model raw.dim_customers (view)
+16:22:53.108315 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [2.6s]
+Processed: 3 models
+Summary: 3 total | 3 success
+==================== 2025-11-29 16:23:00.044990 | 019ad06c-c2cc-74f1-90e1-5aaea9165d4e ====================
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+16:23:00.745127 [debug]: Query executed on node unknown:
+show terse schemas in database raw
+    limit 10000
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */
+16:23:01.054455 [debug]: Query executed on node model.jaffle_shop.dim_customers:
+SHOW OBJECTS IN SCHEMA "RAW"."RAW" LIMIT 10000
+16:23:01.055409 [debug]: Writing runtime sql for node "model.jaffle_shop.dim_customers"
+16:23:01.277548 [debug]: Query executed on node model.jaffle_shop.dim_customers:
+create or replace   view raw.raw.dim_customers
+  
+   as (
+    
+with customers as (
+
+    select * from raw.raw.stg_jaffle_shop_customers
+   
+),
+
+orders as (
+
+   select * from raw.raw.stg_jaffle_shop_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.dim_customers"} */
+ Succeeded [  0.45s] model raw.dim_customers (view)
+16:23:01.333208 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [1.3s]
+Processed: 1 model
+Summary: 1 total | 1 success
+==================== 2025-11-29 16:24:02.661877 | 019ad06d-b764-7271-b675-4543430982ba ====================
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+16:24:04.130031 [debug]: Query executed on node unknown:
+show terse schemas in database raw
+    limit 10000
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */
+16:24:04.473972 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_customers:
+SHOW OBJECTS IN SCHEMA "RAW"."RAW" LIMIT 10000
+16:24:04.475199 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_jaffle_shop_customers"
+16:24:04.639493 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_customers:
+create or replace   view raw.raw.stg_jaffle_shop_customers
+  
+   as (
+     select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from raw.jaffle_shop.customers
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.stg_jaffle_shop_customers"} */
+ Succeeded [  0.46s] model raw.stg_jaffle_shop_customers (view)
+16:24:04.695553 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_orders:
+SHOW OBJECTS IN SCHEMA "RAW"."RAW" LIMIT 10000
+16:24:04.696423 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_jaffle_shop_orders"
+16:24:04.878902 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_orders:
+create or replace   view raw.raw.stg_jaffle_shop_orders
+  
+   as (
+     select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from raw.jaffle_shop.orders
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.stg_jaffle_shop_orders"} */
+ Succeeded [  0.70s] model raw.stg_jaffle_shop_orders (view)
+16:24:04.882532 [debug]: Writing runtime sql for node "model.jaffle_shop.dim_customers"
+16:24:05.171371 [debug]: Query executed on node model.jaffle_shop.dim_customers:
+create or replace   view raw.raw.dim_customers
+  
+   as (
+    
+with customers as (
+
+    select * from raw.raw.stg_jaffle_shop_customers
+   
+),
+
+orders as (
+
+   select * from raw.raw.stg_jaffle_shop_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.dim_customers"} */
+ Succeeded [  0.29s] model raw.dim_customers (view)
+16:24:05.229029 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [2.6s]
+Processed: 3 models
+Summary: 3 total | 3 success
+==================== 2025-11-29 16:31:11.918519 | 019ad074-4426-79b3-a96a-3a0ad08cc064 ====================
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+16:31:11.941948 [error]: dbt1001: Profile 'developer' not found in profiles.yml
+16:31:12.061037 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error [142ms]
+==================== 2025-11-29 16:32:35.530128 | 019ad075-8ac9-7842-afa6-cc09c12eee6e ====================
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+16:32:37.426019 [debug]: Query executed on node unknown:
+show terse schemas in database raw
+    limit 10000
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */
+16:32:37.858207 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_orders:
+SHOW OBJECTS IN SCHEMA "RAW"."RAW" LIMIT 10000
+16:32:37.860880 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_jaffle_shop_orders"
+16:32:38.079162 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_orders:
+create or replace   view raw.raw.stg_jaffle_shop_orders
+  
+   as (
+     select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from raw.jaffle_shop.orders
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.stg_jaffle_shop_orders"} */
+ Succeeded [  0.54s] model raw.stg_jaffle_shop_orders (view)
+16:32:38.101974 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_customers:
+SHOW OBJECTS IN SCHEMA "RAW"."RAW" LIMIT 10000
+16:32:38.103379 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_jaffle_shop_customers"
+16:32:38.312563 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_customers:
+create or replace   view raw.raw.stg_jaffle_shop_customers
+  
+   as (
+     select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from raw.jaffle_shop.customers
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.stg_jaffle_shop_customers"} */
+ Succeeded [  0.77s] model raw.stg_jaffle_shop_customers (view)
+16:32:38.315185 [debug]: Writing runtime sql for node "model.jaffle_shop.dim_customers"
+16:32:38.602626 [debug]: Query executed on node model.jaffle_shop.dim_customers:
+create or replace   view raw.raw.dim_customers
+  
+   as (
+    
+with customers as (
+
+    select * from raw.raw.stg_jaffle_shop_customers
+   
+),
+
+orders as (
+
+   select * from raw.raw.stg_jaffle_shop_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.dim_customers"} */
+ Succeeded [  0.29s] model raw.dim_customers (view)
+16:32:38.669819 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [3.1s]
+Processed: 3 models
+Summary: 3 total | 3 success
+==================== 2025-11-29 16:39:31.114583 | 019ad07b-e222-7c13-8917-9df4de4a3133 ====================
+dbt-fusion 2.0.0-preview.72
+   Loading ~/.dbt/profiles.yml
+16:39:33.015852 [debug]: Query executed on node unknown:
+show terse schemas in database raw
+    limit 10000
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */
+16:39:33.354584 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_orders:
+SHOW OBJECTS IN SCHEMA "RAW"."RAW" LIMIT 10000
+16:39:33.356310 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_jaffle_shop_orders"
+16:39:33.534150 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_customers:
+SHOW OBJECTS IN SCHEMA "RAW"."RAW" LIMIT 10000
+16:39:33.536829 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_jaffle_shop_customers"
+16:39:33.537321 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_orders:
+create or replace   view raw.raw.stg_jaffle_shop_orders
+  
+   as (
+     select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from raw.jaffle_shop.orders
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.stg_jaffle_shop_orders"} */
+ Succeeded [  0.46s] model raw.stg_jaffle_shop_orders (view)
+16:39:33.809008 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop_customers:
+create or replace   view raw.raw.stg_jaffle_shop_customers
+  
+   as (
+     select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from raw.jaffle_shop.customers
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.stg_jaffle_shop_customers"} */
+ Succeeded [  0.74s] model raw.stg_jaffle_shop_customers (view)
+16:39:33.811659 [debug]: Applying DROP to: RAW.RAW.DIM_CUSTOMERS
+16:39:33.913218 [debug]: Query executed on node model.jaffle_shop.dim_customers:
+drop view if exists RAW.RAW.DIM_CUSTOMERS cascade
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.dim_customers"} */
+16:39:33.916253 [debug]: Writing runtime sql for node "model.jaffle_shop.dim_customers"
+16:39:35.669817 [debug]: Query executed on node model.jaffle_shop.dim_customers:
+create or replace transient  table raw.raw.dim_customers
+    
+    
+    
+    as (
+with customers as (
+
+    select * from raw.raw.stg_jaffle_shop_customers
+   
+),
+
+orders as (
+
+   select * from raw.raw.stg_jaffle_shop_orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+    )
+
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.dim_customers"} */
+ Succeeded [  1.86s] model raw.dim_customers (table)
+16:39:35.728437 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [4.6s]
+Processed: 3 models
+Summary: 3 total | 3 success
+[0m11:49:09.550011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108017230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078f6720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10803f980>]}
+
+
+============================== 11:49:09.553287 | f746c718-9480-4e26-ad62-67f3beae0ba0 ==============================
+[0m11:49:09.553287 [info ] [MainThread]: Running with dbt=1.7.10
+[0m11:49:09.553723 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/danielletruong/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/danielletruong/Desktop/dbt-learn-gt-init-master/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt ', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:49:09.618868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f746c718-9480-4e26-ad62-67f3beae0ba0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f395e0>]}
+[0m11:49:09.619467 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:49:09.620120 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m11:49:09.651691 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.14414683, "process_user_time": 1.189777, "process_kernel_time": 0.127827, "process_mem_max_rss": "100909056", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m11:49:09.652222 [debug] [MainThread]: Command `cli deps` succeeded at 11:49:09.652116 after 0.14 seconds
+[0m11:49:09.652491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f395e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10108fb60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107de4380>]}
+[0m11:49:09.652756 [debug] [MainThread]: Flushing usage events
