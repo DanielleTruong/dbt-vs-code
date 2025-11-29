@@ -1,39 +1,39 @@
--- created_at: 2025-11-29T16:39:32.924403+00:00
--- finished_at: 2025-11-29T16:39:33.015852+00:00
--- elapsed: 91ms
+-- created_at: 2025-11-29T18:05:14.456023+00:00
+-- finished_at: 2025-11-29T18:05:14.536422+00:00
+-- elapsed: 80ms
 -- outcome: success
 -- dialect: snowflake
 -- node_id: not available
--- query_id: 01c0b807-3203-81a6-0000-0006e462a151
+-- query_id: 01c0b85d-3203-81a6-0000-0006e462a1c1
 -- desc: execute adapter call
 show terse schemas in database raw
     limit 10000
 /* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */;
--- created_at: 2025-11-29T16:39:33.220338+00:00
--- finished_at: 2025-11-29T16:39:33.354584+00:00
--- elapsed: 134ms
+-- created_at: 2025-11-29T18:05:14.767279+00:00
+-- finished_at: 2025-11-29T18:05:14.895730+00:00
+-- elapsed: 128ms
 -- outcome: success
 -- dialect: snowflake
 -- node_id: model.jaffle_shop.stg_jaffle_shop_orders
--- query_id: 01c0b807-3203-81a6-0000-0006e462a155
+-- query_id: 01c0b85d-3203-81a6-0000-0006e462a1c5
 -- desc: get_relation > list_relations call
 SHOW OBJECTS IN SCHEMA "RAW"."RAW" LIMIT 10000;
--- created_at: 2025-11-29T16:39:33.447780+00:00
--- finished_at: 2025-11-29T16:39:33.534150+00:00
--- elapsed: 86ms
+-- created_at: 2025-11-29T18:05:15.033803+00:00
+-- finished_at: 2025-11-29T18:05:15.135780+00:00
+-- elapsed: 101ms
 -- outcome: success
 -- dialect: snowflake
 -- node_id: model.jaffle_shop.stg_jaffle_shop_customers
--- query_id: 01c0b807-3203-81a6-0000-0006e462a15d
+-- query_id: 01c0b85d-3203-81a6-0000-0006e462a1cd
 -- desc: get_relation > list_relations call
 SHOW OBJECTS IN SCHEMA "RAW"."RAW" LIMIT 10000;
--- created_at: 2025-11-29T16:39:33.359838+00:00
--- finished_at: 2025-11-29T16:39:33.537321+00:00
--- elapsed: 177ms
+-- created_at: 2025-11-29T18:05:14.900310+00:00
+-- finished_at: 2025-11-29T18:05:15.145349+00:00
+-- elapsed: 245ms
 -- outcome: success
 -- dialect: snowflake
 -- node_id: model.jaffle_shop.stg_jaffle_shop_orders
--- query_id: 01c0b807-3203-81a6-0000-0006e462a159
+-- query_id: 01c0b85d-3203-81a6-0000-0006e462a1c9
 -- desc: execute adapter call
 create or replace   view raw.raw.stg_jaffle_shop_orders
   
@@ -47,13 +47,13 @@ create or replace   view raw.raw.stg_jaffle_shop_orders
     from raw.jaffle_shop.orders
   )
 /* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.stg_jaffle_shop_orders"} */;
--- created_at: 2025-11-29T16:39:33.540489+00:00
--- finished_at: 2025-11-29T16:39:33.809008+00:00
--- elapsed: 268ms
+-- created_at: 2025-11-29T18:05:15.141734+00:00
+-- finished_at: 2025-11-29T18:05:15.347230+00:00
+-- elapsed: 205ms
 -- outcome: success
 -- dialect: snowflake
 -- node_id: model.jaffle_shop.stg_jaffle_shop_customers
--- query_id: 01c0b807-3203-81a6-0000-0006e462a161
+-- query_id: 01c0b85d-3203-81a6-0000-0006e462a1d1
 -- desc: execute adapter call
 create or replace   view raw.raw.stg_jaffle_shop_customers
   
@@ -66,23 +66,13 @@ create or replace   view raw.raw.stg_jaffle_shop_customers
     from raw.jaffle_shop.customers
   )
 /* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.stg_jaffle_shop_customers"} */;
--- created_at: 2025-11-29T16:39:33.813015+00:00
--- finished_at: 2025-11-29T16:39:33.913218+00:00
--- elapsed: 100ms
+-- created_at: 2025-11-29T18:05:15.352411+00:00
+-- finished_at: 2025-11-29T18:05:16.688727+00:00
+-- elapsed: 1.3s
 -- outcome: success
 -- dialect: snowflake
 -- node_id: model.jaffle_shop.dim_customers
--- query_id: 01c0b807-3203-81a6-0000-0006e462a165
--- desc: execute adapter call
-drop view if exists RAW.RAW.DIM_CUSTOMERS cascade
-/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.dim_customers"} */;
--- created_at: 2025-11-29T16:39:33.917714+00:00
--- finished_at: 2025-11-29T16:39:35.669817+00:00
--- elapsed: 1.8s
--- outcome: success
--- dialect: snowflake
--- node_id: model.jaffle_shop.dim_customers
--- query_id: 01c0b807-3203-81a6-0000-0006e462a169
+-- query_id: 01c0b85d-3203-81a6-0000-0006e462a1d5
 -- desc: execute adapter call
 create or replace transient  table raw.raw.dim_customers
     
